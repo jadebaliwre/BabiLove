@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .letter-popup {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(230, 57, 128, 0.25);
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            animation: popUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes popUp {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        h1 {
+            color: #e63980;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            white-space: pre-line;
+        }
+        .heart {
+            color: #e63980;
+            font-size: 35px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    
+
+    <div class="letter-popup">
+        <h1>To My Dearest Boyfriend ❤️</h1>
+        <p>
+Minamhak kong Ginoong Galan,
+
+Sa paglipas ng taon na puno ng saya at sakit; ikaw pa rin ang pipiliin ko. Dahil sa bawat paglubog at 
+pag-angat ng araw ikaw pa rin ang mamahalin ko. Sa mga luhang pumatak, sa mga sakit na dinanas natin 
+sa isa-t isa ikaw pa rin ang pipiliin ko sa lahat ng pagkakataon. 
+
+Mga araw man natin ay di na gaanong masaya, nasa baba man tayo ngayon; tandaan mo ang daang ito ay tinatahak
+natin nang sabay. Hindi ikaw at ako ang magkalaban. Sabay nating labanan ang problemang kinakaharap. 
+Tumalikod man ako'y 'wag kang tatalikod; tumalikod ka ma'y hindi ako tatalikod. 
+Dahil lumubog man satin ang isa tandaan mo na dapat may isa sa ating nakaangat na 
+tutulong upang makabangon ulit. 
+
+Sa pamamagitan ng liham na ito, nais kong iparating sayo na mahal na mahal kita. Huwag mo sanang 
+isipin na papalitan kita sapagkat hindi ganon kababaw ang pagmamahal ko sayo. Sa mga araw na hindi na natin kaya, sa mga araw na gusto na nating sumuko; iisa tayo. 
+
+Mahal na mahal kita. Te amo. Ich Le be dich. Je t'aime. I love you.
+
+Nagmamahal,
+Binibining Zonio 
+
+        </p>
+        <div class="heart">❤️</div>
+    </div>
+
+    <script>
+        document.addEventListener('click', function() {
+            const music = document.getElementById('bgMusic');
+            if (music.paused) {
+                music.play();
+            }
+        }, { once: true });
+    </script>
+
+</body>
+</html>
